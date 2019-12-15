@@ -52,3 +52,13 @@ def over?(board)
     return false
   end
 end
+
+def winner?(board)
+  if won?(board) && position_1 == "X"
+    return "X"
+  elsif won?(board) && position_1 == "O"
+    return "O"
+  else
+    return nil
+  end
+end
